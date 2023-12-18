@@ -1,0 +1,7 @@
+{
+  "name": "SportsChamp",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
