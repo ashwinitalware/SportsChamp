@@ -1,13 +1,50 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">login</ion-title>
-    </ion-toolbar>
-  </ion-header>
+  <div class="p-4">
+    <div align="center" class="p-5">
+      <img src="assets/Icon_SportsChamp.png" alt="">
+    </div>
+
+
+    <div class="mt-8">
+      <div align="center">
+        <p class="font-bold text-lg ">Login to your account</p>
+      </div>
+
+      <div class="mt-5">
+        <input class="input" name="text" placeholder="Username" type="text">
+      </div>
+
+      <div class="mt-3">
+        <input class="input" name="text" placeholder="Password" type="text">
+      </div>
+
+      <button class="btn-grad mt-8" routerLink="/dashboard">
+        <span style="float: center; font-weight: bold; font-size: 0.9rem">Login</span>
+      </button>
+
+      <ion-row class="mt-3">
+        <ion-col size="4">
+          <p class="border-b border-gray-600 mt-3"></p>
+        </ion-col>
+        <ion-col size="4">
+          <div align="center">
+            <p>Or Login With</p>
+          </div>
+        </ion-col>
+        <ion-col size="4">
+          <p class="border-b border-gray-600 mt-3"></p>
+        </ion-col>
+      </ion-row>
+
+      <div class="border border-gray-400 rounded-md flex justify-center p-3 mt-2">
+        <img width="20px" height="5px" src="assets/google.png" alt=""> &nbsp;
+        Google
+      </div>
+
+      <div align="center" class="mt-3">
+        <p>Don't have an account yet? <span style="color: #d00681;" routerLink="/register"><b>Register Now</b></span></p>
+      </div>
+
+    </div>
+  </div>
 </ion-content>

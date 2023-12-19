@@ -1,0 +1,75 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">e-Book</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+
+  <div class="p-2">
+    <swiper-container #swiper (slidechange)="swiperSlideChanged($event)" [loop]="true">
+      <swiper-slide>
+        <div class="p-2">
+          <img class="rounded-md" src="assets/dash-slider1.png">
+        </div>
+      </swiper-slide>
+
+      <swiper-slide>
+        <div class="p-2">
+          <img class="rounded-md" src="assets/dash-slider2.png">
+        </div>
+      </swiper-slide>
+    </swiper-container>
+
+    <ion-grid>
+      <ion-row class="border-b-2 border-pink-800 rounded-md p-2 bg-gray-50 ">
+        <ion-col size="10">
+          <div>
+            <p class="text-sm text-gray-500"><ion-icon class="text-pink-700 text-sm" name="calendar"></ion-icon> 28 Dec 2020</p>
+            <p class="text-black mt-1 text-md">The Master</p>
+          </div>
+        </ion-col>
+
+        <ion-col size="2" class="flex items-center">
+          <img src="assets/pdf-file.png" alt="">
+        </ion-col>
+
+      </ion-row>
+
+
+      <ion-row class="border-b-2 border-pink-800 rounded-md p-2 bg-gray-50 mt-3">
+        <ion-col size="10">
+          <div>
+            <p class="text-sm text-gray-500"><ion-icon class="text-pink-700 text-sm" name="calendar"></ion-icon> 10 Feb 2020</p>
+            <p class="text-black mt-1 text-md">Basketball</p>
+          </div>
+        </ion-col>
+
+        <ion-col size="2" class="flex items-center">
+          <img src="assets/pdf-file.png" alt="">
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row class="border-b-2 border-pink-800 rounded-md p-2 bg-gray-50 mt-3">
+        <ion-col size="10">
+          <div>
+            <p class="text-sm text-gray-500"><ion-icon class="text-pink-700 text-sm" name="calendar"></ion-icon> 25 Oct 1998</p>
+            <p class="text-black mt-1 text-md">Goodnight Basketball</p>
+          </div>
+        </ion-col>
+
+        <ion-col size="2" class="flex items-center">
+          <img src="assets/pdf-file.png" alt="">
+        </ion-col>
+      </ion-row>
+
+
+    </ion-grid>
+  </div>
+</ion-content>
+<app-footer></app-footer>

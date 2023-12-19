@@ -1,0 +1,100 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Grade Card</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <swiper-container #swiper (slidechange)="swiperSlideChanged($event)" [loop]="true">
+    <swiper-slide>
+      <div class="p-2">
+        <img class="rounded-md" src="assets/slider-card.png">
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="p-2">
+        <img class="rounded-md" src="assets/slider-card.png">
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-row class="p-2">
+    <ion-col size="12">
+      <div class="border border-gray-100 rounded-md shadow-md p-3 bg-50">
+        <div class="flex justify-between ">
+          <div>
+            <p class="text-black text-sm font-bold">Class: 7</p>
+            <p class="text-pink-600 text-sm"> 100 Student | 20 Rank</p>
+          </div>
+          <div>
+            <p class="text-black text-sm font-bold">Section: C</p>
+          </div>
+        </div>
+
+        <div class="border-b border-dashed  border-pink-600 my-2 mt-2"></div>
+
+        <ion-row>
+          <ion-col size="6">
+            <p>Name</p>
+          </ion-col>
+          <ion-col size="4">
+            <p>Roll No.</p>
+          </ion-col>
+
+          <ion-col size="2">
+            <p>Rank</p>
+          </ion-col>
+        </ion-row>
+
+        <div class="border-b border-dashed border-b-2 my-2 mt-2"></div>
+        
+        <ion-row>
+          <ion-col size="6">
+            <p>1. Sumit patil</p>
+          </ion-col>
+          <ion-col size="4">
+            <p>RS001</p>
+          </ion-col>
+
+          <ion-col size="2">
+            <p>1st</p>
+          </ion-col>
+
+
+          <ion-col size="6">
+            <p>2. Ashu Talware</p>
+          </ion-col>
+          <ion-col size="4">
+            <p>RS002</p>
+          </ion-col>
+
+          <ion-col size="2">
+            <p>2nd</p>
+          </ion-col>
+
+          
+          <ion-col size="6">
+            <p>3. Neha Sharma</p>
+          </ion-col>
+          <ion-col size="4">
+            <p>RS003</p>
+          </ion-col>
+
+          <ion-col size="2">
+            <p>3rd</p>
+          </ion-col>
+        </ion-row>
+
+
+       
+
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<app-footer></app-footer>

@@ -1,0 +1,101 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Blog</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <swiper-container #swiper (slidechange)="swiperSlideChanged($event)" [loop]="true">
+    <swiper-slide>
+      <div class="p-2">
+        <img class="rounded-md" src="assets/slider-blog.png">
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="p-2">
+        <img class="rounded-md" src="assets/slider-blog.png">
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-row class="p-2">
+    <ion-col size="6">
+      <div class="rounded-md shadow-md" routerLink="/details">
+        <img class="rounded-tl-md rounded-tr-md" alt="" src="assets/blog1.png" />
+        <div>
+          <p style="z-index: 1000; position: absolute; margin-top: -12%; margin-left: 50%;"
+            class="text-xs bg-pink-700 p-1 rounded-tl-xl text-white"><ion-icon class="text-white text-xs"
+              name="calendar"></ion-icon> 25 Oct 1998</p>
+        </div>
+        <ion-card-header class="p-1 border-b border-pink-600 bg-pink-50">
+          <div align="center">
+            <p class="text-lg font-bold text-black">The Bridge</p>
+            <p class="text-xs text-pink-700 ">Dr. K.T. Thakur</p>
+          </div>
+        </ion-card-header>
+      </div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="rounded-md shadow-md"  routerLink="/details">
+        <img class="rounded-tl-md rounded-tr-md" alt="" src="assets/blog2.png" />
+        <div>
+          <p style="z-index: 1000; position: absolute; margin-top: -12%; margin-left: 50%;"
+            class="text-xs bg-pink-700 p-1 rounded-tl-xl text-white"><ion-icon class="text-white text-xs"
+              name="calendar"></ion-icon> 20 Jan 1998</p>
+        </div>
+        <ion-card-header class="p-1 border-b border-pink-600 bg-pink-50">
+          <div align="center">
+            <p class="text-lg font-bold text-black">myKhel</p>
+            <p class="text-xs text-pink-700 ">Dr. Aaron Schatz </p>
+          </div>
+        </ion-card-header>
+
+      </div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="rounded-md shadow-md"  routerLink="/details">
+        <img class="rounded-tl-md rounded-tr-md" alt="" src="assets/blog3.png" />
+
+        <div>
+          <p style="z-index: 1000; position: absolute; margin-top: -12%; margin-left: 50%;"
+            class="text-xs bg-pink-700 p-1 rounded-tl-xl text-white"><ion-icon class="text-white text-xs"
+              name="calendar"></ion-icon> 18 Dec 2020</p>
+        </div>
+        <ion-card-header class="p-1 border-b border-pink-600 bg-pink-50">
+          <div align="center">
+            <p class="text-lg font-bold text-black">Times of Sports</p>
+            <p class="text-xs text-pink-700 ">Dr. M.K.Patil</p>
+          </div>
+        </ion-card-header>
+
+      </div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="rounded-md shadow-md"  routerLink="/details">
+        <img class="rounded-tl-md rounded-tr-md" alt="" src="assets/blog4.png" />
+
+        <div>
+          <p style="z-index: 1000; position: absolute; margin-top: -12%; margin-left: 50%;"
+            class="text-xs bg-pink-700 p-1 rounded-tl-xl text-white"><ion-icon class="text-white text-xs"
+              name="calendar"></ion-icon> 30 Feb 2021</p>
+        </div>
+        <ion-card-header class="p-1 border-b border-pink-600 bg-pink-50">
+          <div align="center">
+            <p class="text-lg font-bold text-black">Sportskeeda</p>
+            <p class="text-xs text-pink-700 ">Mr. Rahul Yadav</p>
+          </div>
+        </ion-card-header>
+      
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<app-footer></app-footer>

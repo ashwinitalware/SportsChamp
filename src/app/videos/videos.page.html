@@ -1,0 +1,72 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">All Videos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <swiper-container #swiper (slidechange)="swiperSlideChanged($event)" [loop]="true">
+    <swiper-slide>
+      <div class="p-2">
+        <img class="rounded-md" src="assets/dash-slider1.png">
+      </div>
+    </swiper-slide>
+
+    <swiper-slide>
+      <div class="p-2">
+        <img class="rounded-md" src="assets/dash-slider2.png">
+      </div>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-row class="p-2">
+    <ion-col size="6">
+      <div class="rounded-md shadow-md">
+        <iframe width="100%" height="120px" src="https://www.youtube.com/embed/wH6cv8N0duo?si=VWu64B3AXfHXUrRe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- <img alt="" src="assets/dash-slider1.png"
+          class="fixed-size-image" /> -->
+        <ion-card-header class="pt-2 pb-2  border-b  border-pink-600 bg-pink-50" >
+          <ion-card-title align="center" class="text-lg"
+           ><b>Road Running</b></ion-card-title>
+        </ion-card-header>
+      </div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="rounded-md shadow-md ">
+        <iframe width="100%" height="120px" src="https://www.youtube.com/embed/ptDObs9O6s8?si=fryPSQgOne95Ql8z" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <!-- <img alt="" src="assets/dash-slider1.png"
+          class="fixed-size-image" /> -->
+        <ion-card-header class="pt-2 pb-2  border-b  border-pink-600 bg-pink-50">
+          <ion-card-title align="center" class="text-lg"
+           ><b>Basketball</b></ion-card-title>
+        </ion-card-header>
+      </div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="rounded-md shadow-md">
+        <iframe width="100%" height="120px" src="https://www.youtube.com/embed/bvkpS6vZjEo?si=_4Zc-SD_R4sCxD6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <ion-card-header class="pt-2 pb-2  border-b  border-pink-600 bg-pink-50">
+          <ion-card-title align="center" class="text-lg"
+           ><b>Badminton</b></ion-card-title>
+        </ion-card-header>
+      </div>
+    </ion-col>
+
+    <ion-col size="6">
+      <div class="rounded-md shadow-md">
+        <iframe width="100%" height="120px" src="https://www.youtube.com/embed/fpmSOInFj4A?si=l-z_fJ58q2rR2LqN" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <ion-card-header class="pt-2 pb-2  border-b  border-pink-600 bg-pink-50">
+          <ion-card-title align="center" class="text-lg"
+           ><b>Track and Field</b></ion-card-title>
+        </ion-card-header>
+      </div>
+    </ion-col>
+  </ion-row>
+</ion-content>
+
+<app-footer></app-footer>

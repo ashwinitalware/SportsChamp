@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NavController } from '@ionic/angular';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +8,13 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(public nav: NavController) {}
+
+  // eslint-disable-next-line @angular-eslint/use-lifecycle-interface
+  ngOnInit() {
+    setTimeout(() => {
+      this.nav.navigateForward('user-login');
+    }, 4000);
+  }
 
 }
