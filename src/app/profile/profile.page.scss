@@ -1,0 +1,23 @@
+.image_container {
+    text-align: center;
+    // padding-top: 4vh;
+    padding-bottom: 2vh;
+    margin-top: -10%;
+    margin-left: 35%;
+    z-index: 1000;
+    position: absolute;
+  
+    img {
+      border-radius: 50%;
+      height: 12vh;
+      width: 12vh;
+      border: 3px solid var(--ion-color-light);
+      box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+      text-align: center;
+    }
+  }
+  
+  
+.footer_div {
+    --background: linear-gradient(90deg, #d00681 0%, #eb0085 100%);
+}

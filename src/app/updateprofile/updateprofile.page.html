@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button color="light"></ion-back-button>
+    </ion-buttons>
+    <ion-title color="light">Update Profile</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="main_container" >
+
+  <div class="p-4">
+    <div align="center" class="p-5">
+      <img src="assets/Icon_SportsChamp.png" alt="">
+    </div>
+
+    <div class="mt-3">
+      <div >
+        <input class="input" name="text" placeholder="First Name" type="text">
+      </div>
+
+      <div class="mt-3">
+        <input class="input" name="text" placeholder="Last Name" type="text">
+      </div>
+
+      <div class="mt-3">
+        <input class="input" name="text" placeholder="Mobile Number" type="text">
+      </div>
+
+      <div class="mt-3">
+        <input class="input" name="text" placeholder="Email" type="text">
+      </div>
+
+      <div class="mt-3">
+        <input class="input" name="text" placeholder="Address" type="text">
+      </div>
+
+    
+      <button class="btn-grad mt-4" routerLink="/profile">
+        <span style="float: center; font-weight: bold; font-size: 0.9rem">Update Profile</span>
+      </button>
+
+   
+
+    </div>
+  </div>
+
+  <div id="snackbar"> <span id="snackbar_error"></span></div>
+
+  <div class="loader">
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 50 50">
+      <circle class="path" cx="25" cy="25" r="20" fill="none" stroke-width="5"></circle>
+    </svg>
+  </div>
+
+</ion-content>
+<app-footer></app-footer>
